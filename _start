@@ -1,0 +1,16 @@
+void _start() { // da o boot
+
+print_colorido("SISTEMA INICIADO", 0x0A); // sistema devolve o texto na tela
+
+char comando[100]; // guarda os 100
+
+print_colorido("> ", 0x0F); // estetica para prompt
+
+print_colorido("[SYSTEM]: SERVIÇO INICIADO.", 0x0E); // mais um comando de estetica
+
+esperar_comando(comando); // chama o kernel.c
+
+
+while(1); // roda em loop infinito
+
+}
